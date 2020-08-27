@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
 export class GifsDataService {
 
   constructor( private http: HttpClient) { }
-  getTreandingGifs(){
-    return this.http.get(`https://api.giphy.com/v1/gifs/treanding?api_key=%${environment.giphyApiKey}&limit=50`)
+  getTrendingGifs(){
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=%${environment.giphyApiKey}&limit=50`);
   }
 }
